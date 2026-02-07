@@ -1,0 +1,115 @@
+PDS_VERSION_ID               = PDS3                                           
+PRODUCT_ID                   = "COMPREHE"                                     
+DATA_SET_ID                  = "VG2-N-MAG-4-SUMM-NLSCOORDS-12SEC-V1.0"        
+PRODUCT_TYPE                 = "DATA"                                         
+STANDARD_DATA_PRODUCT_ID     = "ASCII DATA"                                   
+PRODUCT_CREATION_TIME        = 1993-10-28T15:08:41                            
+                                                                              
+RECORD_TYPE                  = FIXED_LENGTH                                   
+RECORD_BYTES                 = 72                                             
+FILE_RECORDS                 = 11291                                          
+                                                                              
+START_TIME                   = 1989-08-24T18:00:00.557                        
+STOP_TIME                    = 1989-08-26T08:19:48.379                        
+SPACECRAFT_CLOCK_START_COUNT = "UNK"                                          
+SPACECRAFT_CLOCK_STOP_COUNT  = "UNK"                                          
+                                                                              
+SPACECRAFT_NAME              = "VOYAGER 2"                                    
+INSTRUMENT_NAME              = "TRIAXIAL FLUXGATE MAGNETOMETER"               
+MISSION_PHASE_NAME           = "NEPTUNE ENCOUNTER"                            
+TARGET_NAME                  = "NEPTUNE"                                      
+                                                                              
+DESCRIPTION                  = "                                              
+   This data set contains magnetic field data resampled at 12 second          
+   resolution in Neptune Longitude System (NLS) coordinates. The              
+   dataset covers the time interval when VG2 was in Neptune's                 
+   magnetosphere."                                                            
+                                                                              
+^TABLE                       = "COMPREHE.ASC"                                 
+OBJECT                       = TABLE                                          
+  INTERCHANGE_FORMAT         = ASCII                                          
+  ROWS                       = 11291                                          
+  COLUMNS                    = 7                                              
+  ROW_BYTES                  = 72                                             
+                                                                              
+  OBJECT                     = COLUMN                                         
+    NAME                     = "Date/Time"                                    
+    COLUMN_NUMBER            = 1                                              
+    UNIT                     = "NONE"                                         
+    DATA_TYPE                = CHARACTER                                      
+    PPI_TIME_FORMAT          = "%YR% %DOY% %HR% %MIN% %SEC% %MSEC%"           
+    START_BYTE               = 2                                              
+    BYTES                    = 19                                             
+    DESCRIPTION              = "Sample date/time formatted as:                
+    YY DDD HH MM SS MSS where YY is the year of 1900, DDD is the              
+    day of year (of 1989), HH is the hour, MM is the minute, SS               
+    is the second, and MSS is the millisecond."                               
+  END_OBJECT                 = COLUMN                                         
+                                                                              
+  OBJECT                     = COLUMN                                         
+    NAME                     = "Range"                                        
+    COLUMN_NUMBER            = 2                                              
+    UNIT                     = "PLANETARY RADII"                              
+    DATA_TYPE                = ASCII_REAL                                     
+    START_BYTE               = 22                                             
+    BYTES                    = 8                                              
+    DESCRIPTION              = "Spacecraft range from the Neptune             
+    center of mass measured in Neptune radii where Rn = 24765 km"             
+  END_OBJECT                 = COLUMN                                         
+                                                                              
+  OBJECT                     = COLUMN                                         
+    NAME                     = "Latitude"                                     
+    COLUMN_NUMBER            = 3                                              
+    UNIT                     = "DEGREE"                                       
+    DATA_TYPE                = ASCII_REAL                                     
+    START_BYTE               = 31                                             
+    BYTES                    = 6                                              
+    DESCRIPTION              = "Spacecraft planetocentric                     
+    (Neptune)latitude, measured in degrees."                                  
+  END_OBJECT                 = COLUMN                                         
+                                                                              
+  OBJECT                     = COLUMN                                         
+    NAME                     = "Longitude"                                    
+    COLUMN_NUMBER            = 4                                              
+    UNIT                     = "DEGREE"                                       
+    DATA_TYPE                = ASCII_REAL                                     
+    START_BYTE               = 38                                             
+    BYTES                    = 6                                              
+    DESCRIPTION              = "Spacecraft planetographic                     
+    (Neptune)longitude (west), measured in degrees."                          
+  END_OBJECT                 = COLUMN                                         
+                                                                              
+  OBJECT                     = COLUMN                                         
+    NAME                     = "Br"                                           
+    COLUMN_NUMBER            = 5                                              
+    UNIT                     = "nT"                                           
+    DATA_TYPE                = ASCII_REAL                                     
+    START_BYTE               = 45                                             
+    BYTES                    = 8                                              
+    MISSING_CONSTANT         = 9999.99                                        
+    DESCRIPTION              = "Radial component of the magnetic field."      
+  END_OBJECT                 = COLUMN                                         
+                                                                              
+  OBJECT                     = COLUMN                                         
+    NAME                     = "Btheta"                                       
+    COLUMN_NUMBER            = 6                                              
+    UNIT                     = "nT"                                           
+    DATA_TYPE                = ASCII_REAL                                     
+    START_BYTE               = 54                                             
+    BYTES                    = 8                                              
+    MISSING_CONSTANT         = 9999.99                                        
+    DESCRIPTION              = "Southward magnetic field component."          
+  END_OBJECT                 = COLUMN                                         
+                                                                              
+  OBJECT                     = COLUMN                                         
+    NAME                     = "Bphi"                                         
+    COLUMN_NUMBER            = 7                                              
+    UNIT                     = "nT"                                           
+    DATA_TYPE                = ASCII_REAL                                     
+    START_BYTE               = 63                                             
+    BYTES                    = 8                                              
+    MISSING_CONSTANT         = 9999.99                                        
+    DESCRIPTION              = "Azimuthal magnetic field component."          
+  END_OBJECT                 = COLUMN                                         
+END_OBJECT                   = TABLE                                          
+END                                                                           

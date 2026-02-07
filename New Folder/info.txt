@@ -1,0 +1,5 @@
+Retrieved from PDS-PPI IGPP UCLA on 2025-04-14T15:58:44Z
+
+You can download this data again with the URL:
+
+/ditdos/download?id=VG2-N-MAG-4-SUMM-NLSCOORDS-12SEC-V1.0:COMPREHE:COMPREHE.ASC
